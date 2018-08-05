@@ -1,17 +1,54 @@
-#home {
-  background-color: #D23333;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+#wrapper {
+  background: image-url("23RED-dark.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+#sider {
+  height: 100%;
+  width: 30%;
+  margin-left: 10%;
+  padding: 20px;
+
+  color: #ddd;
+  opacity: .7;
+}
+
+.marg-top {
+  margin-top: 20px
+}
+
+#soon {
+  position:fixed;
+  bottom:0;
+  right:10px;
+  text-align: right;
+}
+
+#mobile-soon {
+  display: none;
+}
+
+////////////////////////     Mobile Version     ////////////////////////////////
+@media screen and (max-width: 480px) {
+
+
+  #sider {
+    width: 80%;
+  }
+
+  #soon {
+    display: none;
+  }
+
+  #mobile-soon {
+    display: block;
+    text-align: right;
+  }
+
+
+
+}
+////////////////////////     Mobile Version     ////////////////////////////////
